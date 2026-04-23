@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawfect Pet Care</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top bg-body-tertiary">
+        <a href=".gallery">Gallery</a>
+        <a href=".services">Services</a>
+        <a href=".FAQs">FAQs</a>
+    </nav>
+
+    <header style="margin-top: 35px">
+        <h1 class="grid text-center">Pawfect Pet Care</h1>
+    </header>
+
+    <main class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+        <!-- Carousel Container -->
+        <section class="container">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imgs/beegboi.jpeg" class="d-block w-100" alt="image of Scooby Doon't being groomed">
+                        <div class="carousel-caption d-none d-md-block">
+
+                            <p class="p-1 text-black">Scooby Doon't being groomed</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/ugly.png" class="d-block w-100" alt="image of spanky the chihuahua">
+                        <div class="carousel-caption d-none d-md-block">
+
+                            <p>Spanky the chihuahua</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imgs/pug.jpeg" class="d-block w-100" alt="image of Proffessor Burlingston the pug">
+                        <div class="carousel-caption d-none d-md-block">
+
+                            <p>Proffessor Burlingston: a well fed pug</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+
+        <section style="margin-top: 30px;">
+            <!-- Cards -->
+
+            <div class="row">
+                <!-- card 1 -->
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="card" style="width: 12rem;">
+                        <img src="imgs/floof.webp" class="card-img-top" alt="Grooming services">
+                        <div class="card-body">
+                            <h5 class="card-title"> Grooming</h5>
+                            <p class="card-text">We offer grooming services for any dog breed big or small at affordable
+                                prices!
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="col-sm-4">
+                    <div class="card" style="width: 12rem;">
+                        <img src="imgs/pool.jpg" class="card-img-top" alt="Pet Motel Overlook">
+                        <div class="card-body">
+                            <h5 class="card-title">Pet Motel</h5>
+                            <p class="card-text">We offer pet boarding with cozy quarters and optional social time</p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="col-sm-4">
+                    <div class="card" style="width: 12rem;">
+                        <img src="imgs/food.png" class="card-img-top" alt="Whole Pet Foods">
+                        <div class="card-body">
+                            <h5 class="card-title">Whole Pet Foods</h5>
+                            <p class="card-text">We sell many types of pet foods to suit a variety of diets</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="margin-top: 30px;">
+            <!-- accordion -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Does my pet need vaccines?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Only a rablies shot is required for our services!</strong> Please provide proof of an up to date rabies vaccine upon registration.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What grooming services do you offer?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>We personally taylor each grooming to your individual pet's needs and your preference.</strong>Bathing, hair,nails, perfume, you name it! Tell us what you want, and we'll discuss price!
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Have you ever been to Hawaii?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Sadly, no, but I've always wanted to visit.</strong> 
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            I don't like blue cheese.
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>Well... thats okay, many people do not enjoy blue cheese.</strong> Perhaps consider consulting a substitute cheese? And perhaps not consult a pet care facility about your cheese related concerns.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>PawfectPetCare&copy;2026</p>
+    </footer>
+</body>
+
+</html>
